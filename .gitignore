@@ -34,3 +34,6 @@ nb-configuration.xml
 
 # Local environment
 .env
+
+postgres_username.txt
+postgres_password.txt
