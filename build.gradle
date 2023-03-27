@@ -20,7 +20,8 @@ dependencies {
 
     implementation("io.quarkus:quarkus-resteasy-reactive")
     implementation("io.quarkus:quarkus-kubernetes")
-    implementation("io.quarkus:quarkus-container-image-jib")
+    # use docker as it can use the previous auth with google access token
+    implementation("io.quarkus:quarkus-container-image-docker")
 
     testImplementation 'io.quarkus:quarkus-junit5'
     testImplementation 'io.rest-assured:rest-assured'
